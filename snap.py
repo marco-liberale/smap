@@ -5,6 +5,7 @@ import socket
 import socks
 import optparse
 import colorama
+import re
 import time
 from stem import Signal
 from stem.control import Controller
