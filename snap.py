@@ -14,13 +14,13 @@ def is_valid_ip(ip):
     # Check if it's a valid IP
     try:
         socket.inet_aton(input_string)
-        return "Valid IP"
+        return True
     except socket.error:
         # If it's not a valid IP, check if it's a valid domain
         pattern = "^([a-z0-9]+(-[a-z0-9]+)*\.)+[a-z]{2,}$"
         if re.match(pattern, input_string):
-            return "Valid Domain"
-    return "Invalid IP or Domain"
+            return True
+    return False
 
 
 # Function to check if a port number is valid
