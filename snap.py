@@ -11,11 +11,17 @@ from stem.control import Controller
 
 # Function to check if an IP address is valid
 def is_valid_ip(ip):
+    # Check if it's a valid IP
     try:
-        socket.inet_aton(ip)  # Try to convert the IP address to binary format
-        return True
+        socket.inet_aton(input_string)
+        return "Valid IP"
     except socket.error:
-        return False
+        # If it's not a valid IP, check if it's a valid domain
+        pattern = "^([a-z0-9]+(-[a-z0-9]+)*\.)+[a-z]{2,}$"
+        if re.match(pattern, input_string):
+            return "Valid Domain"
+    return "Invalid IP or Domain"
+
 
 # Function to check if a port number is valid
 def is_valid_port(port):
