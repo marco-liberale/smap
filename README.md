@@ -17,10 +17,8 @@ Before installing SMAP, ensure you have the following prerequisites installed on
 To get started with SMAP, you'll first need to clone its repository from GitHub. Open your terminal and execute the following command:
 
 ```bash
-git clone https://github.com/your-username/smap.git
+git clone https://github.com/marco-liberale/smap.git
 ```
-
-Make sure to replace `https://github.com/your-username/smap.git` with the actual URL of the SMAP repository.
 
 ### Setting Up the Environment (Debian/Ubuntu)
 
