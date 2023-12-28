@@ -51,8 +51,8 @@ def main():
         parser.add_option("-t", "--target", dest="target_ip", help="Specify the target IP address or domain name.")
         parser.add_option("-p", "--port", dest="target_port", default="1-1000",
                           help="Specify the target port or range of ports. Default is 1-1000.")
-        parser.add_option("-o", "--timeout", dest="timeout", default=3, type="int",
-                          help="Specify the timeout for each port scan. Default is 3 seconds. (Anything below 3 seconds will cause inaccurate results)")
+        parser.add_option("-o", "--timeout", dest="timeout", default=4, type="int",
+                          help="Specify the timeout for each port scan. Default is 4 seconds. (Anything below 4 seconds will cause inaccurate results)")
         parser.add_option("-v", "--verbose", dest="verbose", action="store_true", default=False,
                           help="Enable verbose mode.")
 
