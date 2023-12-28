@@ -46,6 +46,7 @@ def get_new_tor_identity(controller):
 def main():
     try:
         print("Made By Marco Liberale")
+
         parser = optparse.OptionParser()
         parser.add_option("-t", "--target", dest="target_ip", help="Specify the target IP address or domain name.")
         parser.add_option("-p", "--port", dest="target_port", default="1-1000",
@@ -91,6 +92,7 @@ def main():
         try:
             with Controller.from_port(port=9051) as controller:
                 controller.authenticate()
+                print("Scanning Started (this may take a while)...")
                 for port in port_range:
                     try:
                         if options.verbose:
