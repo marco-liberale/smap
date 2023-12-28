@@ -51,7 +51,7 @@ def main():
         ip = options.target_ip
 
     if not is_valid_ip(ip):
-        print("Invalid IP address.")
+        print("Invalid IP address Or Hostname.")
         return
 
     ports = options.target_port.replace(" ", "").split(",")
